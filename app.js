@@ -1,6 +1,6 @@
 /* NegosyoSheet — unlock gate. OWNER: set codes + real full-file URL (see PAYMENTS.md). */
 'use strict';
-const PRO_CODES = ['RENTSHEET-699', 'RS-DEMO'];
+const PRO_CODES = ['RS-PRO-DABFD51C7D4A', 'DEMO'];
 const FULL_URL = './full/RentSheet.xlsx'; // set to release URL or keep path (see PAYMENTS.md)
 const LS_KEY = 'ns_pro';
 
