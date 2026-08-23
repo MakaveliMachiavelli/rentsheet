@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RentSheet — Rental Property Income &amp; Expense Tracker for Landlords ($6.99 one-time)</title>
+<link rel="manifest" href="manifest.json">
 <meta name="description" content="Excel/Google Sheets tracker for landlords with 1–20 units: rent collection status (PAID/PARTIAL/LATE), expired-lease alerts, expenses per unit, and a collection-rate dashboard. One-time $6.99 — not a subscription.">
 <meta property="og:title" content="RentSheet — Landlord Rental Income Tracker">
 <meta property="og:description" content="Free landlord rental income/expense tracker: collection rate dashboard, late-rent alerts, lease expiry warnings. $6.99 full version.">
@@ -155,5 +156,11 @@
 </div>
 
 <script src="app.js"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js').catch(() => {});
+}
+</script>
 </body>
 </html>
