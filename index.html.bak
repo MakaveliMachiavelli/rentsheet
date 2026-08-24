@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RentSheet — Rental Property Income &amp; Expense Tracker for Landlords ($6.99 one-time)</title>
+<meta name="description" content="Excel/Google Sheets tracker for landlords with 1–20 units: rent collection status (PAID/PARTIAL/LATE), expired-lease alerts, expenses per unit, and a collection-rate dashboard. One-time $6.99 — not a subscription.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231d4ed8'/%3E%3Ctext x='32' y='44' font-size='32' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3E🏠%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "RentSheet — Rental Property Income & Expense Tracker",
+  "description": "Excel/Google Sheets tracker for landlords: rent log with late detection, lease expiry alerts, per-unit expenses, collection-rate dashboard.",
+  "offers": {"@type": "Offer", "price": "6.99", "priceCurrency": "USD"}
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">Rent<span>Sheet</span></div>
+  <nav>
+    <a href="#inside">What's inside</a>
+    <button id="proBtn" class="btn-link">Get it — $6.99</button>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Which units actually make you money?<br><span class="hl">Your whole portfolio, one screen.</span></h1>
+    <p class="sub"><strong>RentSheet</strong> tracks rent collection (✅ PAID / 🟡 PARTIAL / 🔴 LATE), flags expiring leases, and rolls every repair and tax into a per-unit profit view — in Excel or Google Sheets. No subscription. Free demo below.</p>
+    <div class="hero-chips">
+      <span>✓ Excel &amp; Google Sheets</span>
+      <span>✓ Late-rent + expired-lease alerts</span>
+      <span>✓ Collection-rate dashboard</span>
+      <span>✓ $6.99 one-time</span>
+    </div>
+  </section>
+
+  <section class="panel preview-panel">
+    <h2>Your dashboard at a glance:</h2>
+    <div class="dash-mock">
+      <div class="dm-card"><div class="dm-label">RENT COLLECTED</div><div class="dm-val">$27,500</div></div>
+      <div class="dm-card"><div class="dm-label">COLLECTION RATE</div><div class="dm-val">82.1%</div></div>
+      <div class="dm-card warn"><div class="dm-label">UNPAID BALANCE</div><div class="dm-val">$6,000</div></div>
+      <div class="dm-card"><div class="dm-label">EXPENSES</div><div class="dm-val">$850</div></div>
+      <div class="dm-card ok"><div class="dm-label">NET INCOME</div><div class="dm-val">$26,650</div></div>
+      <div class="dm-card warn"><div class="dm-label">LATE / EXPIRED</div><div class="dm-val">1 + 1</div></div>
+    </div>
+    <p class="hint">Log one row per rent payment — every number here updates itself.</p>
+  </section>
+
+  <section class="marketing" id="inside">
+    <h2>What's inside</h2>
+    <div class="cards">
+      <div class="card"><h3>🏠 PROPERTIES</h3><p>Every unit with tenant, rent, and lease dates. Leases flip to <strong>⚠️ EXPIRED</strong> automatically the day they lapse — never lose a renewal to a sticky note again.</p></div>
+      <div class="card"><h3>💰 RENT LOG</h3><p>One row per unit per month. Balance auto-computes; status shows <strong>✅ PAID / 🟡 PARTIAL / 🔴 LATE</strong> so slow payers jump out instantly.</p></div>
+      <div class="card"><h3>🧾 EXPENSES</h3><p>Repairs, taxes, insurance, management fees — tagged by unit with dropdowns, then rolled into each unit's net income.</p></div>
+      <div class="card"><h3>📊 DASHBOARD</h3><p>Collected vs expected, <strong>collection rate</strong>, unpaid balance, net income, and a per-unit summary table. The numbers your accountant asks for, ready.</p></div>
+    </div>
+
+    <div class="cta-box">
+      <h2>Try the demo, keep the full version</h2>
+      <p class="once">Demo is free (limited rows). Full version: 200 rows per sheet + free updates.</p>
+      <div class="cta-row">
+        <a class="btn big alt" href="RentSheet-Demo.xlsx" download>⬇️ Free DEMO (xlsx)</a>
+        <button id="proBtn2" class="btn big primary">🛒 Full version — $6.99</button>
+      </div>
+    </div>
+
+    <h2>FAQ</h2>
+    <div class="faq-item"><h3>Works in Google Sheets?</h3><p>Yes — upload to Drive and open with Google Sheets. Formulas, dropdowns and alerts all work.</p></div>
+    <div class="faq-item"><h3>How is this different from property-management software?</h3><p>PMS runs $20–50/month per unit and wants your bank login. RentSheet is a one-time $6.99 spreadsheet you own, offline-friendly, with no account to create.</p></div>
+    <div class="faq-item"><h3>How many units?</h3><p>Up to 200 rows per sheet — most small landlords run 1–20 units comfortably.</p></div>
+    <div class="faq-item"><h3>Can I use it for Airbnb / short-term rentals?</h3><p>Yes — log each payout as a rent row per property; expenses work the same.</p></div>
+  </section>
+
+  <section class="cross-sell">
+    <p>🇵🇭 Running a PH store or reselling? Also see <a href="https://makavelimachiavelli.github.io/negosyosheet/">NegosyoSheet — inventory, utang &amp; profit tracker</a>. · More free tools at <a href="https://makavelimachiavelli.github.io/">zinvent</a>.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>RentSheet — for landlords with 1–20 units. Built by <a href="https://makavelimachiavelli.github.io/">zinvent</a>. · Documenting move-in? <a href="https://makavelimachiavelli.github.io/moveinreport/">MoveInReport — free photo inspection reports</a></p>
+</footer>
+
+<!-- PAY MODAL -->
+<div id="payModal" class="modal hidden">
+  <div class="modal-card">
+    <button class="modal-x" id="payClose">✕</button>
+    <h2>Get the Full Version</h2>
+    <p class="price">$6.99 <span>one-time · yours forever</span></p>
+    <div class="qr-box">
+      <a id="payLink" href="#" class="pay-alt">💳 Pay by card →</a>
+      <img src="pay-qr.svg" alt="Payment QR (replace with merchant QR)" width="180" height="180">
+    </div>
+    <ol class="pay-steps">
+      <li>Pay $6.99 (card link or QR; GCash ₱199 works too).</li>
+      <li>Enter the unlock code you receive.</li>
+      <li>Download the full version instantly.</li>
+    </ol>
+    <div class="code-row">
+      <input id="codeInput" placeholder="Enter unlock code">
+      <button id="codeBtn" class="btn primary">Unlock</button>
+    </div>
+    <p class="code-msg" id="codeMsg"></p>
+    <div id="dlBox" class="dl-box hidden">
+      <a id="dlLink" class="btn primary big" href="#">⬇️ Download RentSheet (full)</a>
+      <p class="hint">Save it right away — this link is for you.</p>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
